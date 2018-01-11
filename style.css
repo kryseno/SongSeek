@@ -4,10 +4,14 @@ body {
     padding-bottom: 100px;
     text-align: center;
     color: white;
+    height: 100vh;
+    width: 100vw;
 }
 .container {
     background-color: rgba(224, 173, 172, 0.5);
     border: 1px solid black;
     margin-top: 100px;
     margin-bottom: 100px;
+    height: 50%;
+    width: 50%;
 }
