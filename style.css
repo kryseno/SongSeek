@@ -7,6 +7,10 @@ body {
     height: 100vh;
     width: 100vw;
 }
+h1,
+h2 {
+    text-shadow: 2px 2px #ffffff;
+}
 .container {
     background-color: rgba(224, 173, 172, 0.5);
     border: 1px solid black;
