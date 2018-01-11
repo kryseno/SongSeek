@@ -7,12 +7,15 @@ body {
     height: 100vh;
     width: 100vw;
 }
-h1,
+h1 {
+    text-shadow: 4px 4px #ffffff;
+}
 h2,
 h3,
 h4,
 h5 {
-    text-shadow: 2px 2px #ffffff;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
 }
 .container {
     background-color: rgba(224, 173, 172, 0.5);
