@@ -6,12 +6,27 @@ body {
     text-align: center;
     height: 100vh;
     width: 100vw;
+    font-weight: bold;
+}
+h1 {
+    text-shadow: 4px 4px #ffffff;
+}
+h2,
+h3,
+h4,
+h5 {
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
 }
 .container {
     background-color: rgba(224, 173, 172, 0.5);
     border: 1px solid black;
     margin-top: 100px;
     margin-bottom: 100px;
-    height: 50%;
-    width: 50%;
+    padding: 15px;
+    height: 75%;
+    width: 75%;
+}
+input {
+    width: 75%;
 }
