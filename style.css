@@ -23,9 +23,12 @@ h5 {
     background-color: rgba(224, 173, 172, 0.5);
     border: 1px solid black;
     border-radius: 4px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
     padding: 25px;
     height: 75%;
     width: 75%;
+}
+.pre-scrollable {
+    max-height: 365px;
 }
