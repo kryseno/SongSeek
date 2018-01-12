@@ -18,49 +18,43 @@
                 <h4>Request A Song!</h4>
             </div>
         </div>
-        <p>
-        <!-- Artist / Input -->
-        <div class="row">
-            <div class="col-lg-2 offset-lg-2 col-md-4 col-sm-12 col-xs-12">
-                Artist Name:
+        <!-- FORM -->
+        <form>
+            <div class="form-group row">
+                <label for="inputArtistName" class="col-sm-3 col-form-label">Artist Name:</label>
+                <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputArtistName" placeholder="Type Artist Here">
+                </div>
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                <input type="text" placeholder="Type Artist Here">
+            <div class="form-group row">
+                <label for="inputSongTitle" class="col-sm-3 col-form-label">Song Title:</label>
+                <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputSongTitle" placeholder="Type Song Title Here">
+                </div>
             </div>
-        </div>
-        <p>
-        <!-- Song / Input -->
-        <div class="row">
-            <div class="col-lg-2 offset-lg-2 col-md-4 col-sm-12 col-xs-12">
-                Song Title:
+            <div class="form-group row">
+                <label for="inputYourName" class="col-sm-3 col-form-label">Your Name:</label>
+                <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputYourName" placeholder="Type Your Name Here">
+                </div>
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                <input type="text" placeholder="Type Title Here">
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-3 col-form-label">Your Email:</label>
+                <div class="col-sm-9">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Type Your Email Here">
+                </div>
             </div>
-        </div>
-        <p>
-        <!-- User's Name / Input -->
-        <div class="row">
-            <div class="col-lg-2 offset-lg-2 col-md-4 col-sm-12 col-xs-12">
-                Your Name:
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 submitStatus">
+                    <h5>Press Submit to Send Your Song Request!</h5>
+                </div>
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                <input type="text" placeholder="Type Your Name Here">
+            <div class="form-group row">
+                <div class="col-sm-12">
+                <button type="submit" class="btn btn-danger">Submit</button>
+                </div>
             </div>
-        </div>
-        <p>
-        <!-- Submit / Input -->
-        <div class="row">
-            <div class="col-lg-2 offset-lg-5">
-                <input type="submit">
-            </div>
-        </div>
-        <p>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 submitStatus">
-                <h5>Press Submit to Send Your Song Request!</h5>
-            </div>
-        </div>
+        </form>
     </div>
 </body>
 </html>
