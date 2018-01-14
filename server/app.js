@@ -22,10 +22,10 @@ app.get('/', function(req, res){
 
     const connection = mysql.createConnection(credentials);
     const query = `INSERT INTO songRequests
-                        SET artistName = "", 
-                            songTitle = "",
-                            usersName = "",
-                            usersEmail = ""`;
+                        SET artistName = '${req.body.artistName}', 
+                            songTitle = '${req.body.songTitle}',
+                            usersName = '${req.body.usersName}',
+                            usersEmail = '${req.body.artistName}'`;
     console.log('this is the query: ', query);
 
     connection.connect(function(){
