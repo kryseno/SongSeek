@@ -29,7 +29,7 @@ function sendSongRequest() {
         usersEmail: this.usersEmail
     };
     console.log('grabbing song request info:',this.songRequestObj);
-    sendReqToDb(this.sendRequestObj);
+    sendReqToDb(this.songRequestObj);
 }
 
 function sendReqToDb(obj) {
