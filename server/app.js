@@ -40,6 +40,31 @@ app.post('/add_song_request', function(req, res){
         console.log('query has started');
     });
     console.log('got a user request');
+
+    //Start Nodemailer: Send email to kryseno
+    const mailOptions = {
+        from: 'SongSeek" <kryseno.server@gmail.com>',
+        to: `kryseno@gmail.com`,
+        subject: 'SongSeek Song Request!',
+        html:   `
+                <div style='background-color: white; font-family: tahoma'>
+                <h2>Here are the details of the song request!</h2>
+                <p><b>Artist Name:</b> ${req.body.artistName}</p>
+                <p><b>Song Title:</b> ${req.body.songTitle}</p>
+                <p><b>User's Name:</b> ${req.body.usersName}</p>
+                <p><b>User's Email:</b> ${req.body.usersEmail}</b></p>
+                </div>
+                `
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+        console.log('Error: ', error);
+        } else {
+        console.log('Email sent successfully' + info.response);
+        }
+    });
+    //End Nodemailer
 });
 
 app.listen(4000, function(){
