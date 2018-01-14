@@ -2,13 +2,20 @@ $(document).ready(initApp);
 
 function initApp() {
     console.log('app initiated');
-    $("#submitButton").click(handleClick);
     $("#songRequestForm").submit(function(e){
         e.preventDefault();
     })
 }
 
-function handleClick() {
+function addClickHandlersToElements() {
+    $("#submitButton").click(handleSubmitClicked);
+}
+
+function handleSubmitClicked() {
+    sendSongRequest();
+}
+
+function sendSongRequest() {
     console.log('submit button clicked');
     const inputArtistName = $("#inputArtistName").val();
     const inputSongTitle = $("#inputSongTitle").val();
@@ -19,6 +26,7 @@ function handleClick() {
     console.log('usersName: '+inputUsersName);
     console.log('usersEmail: '+inputUsersEmail);
 }
+
 
 // ajax call
 // grab input data
