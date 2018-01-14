@@ -73,9 +73,10 @@ function changeSubmitStatus() {
 }
 
 function revealSubmitButton() {
-    $("form").toggle();
-    $("#newSongButton").addClass("hide");
-    const requestSong = $("#displayStatus")
-    .html('Request A Song!');
-$(".displaySuccess").append(requestSong);
+    location.reload();
+    // $("form").toggle();
+    // $("#newSongButton").addClass("hide");
+    // const requestSong = $("#displayStatus")
+    //     .html('Request A Song!');
+    // $(".displaySuccess").append(requestSong);
 }
