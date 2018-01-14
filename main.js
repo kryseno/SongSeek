@@ -51,6 +51,11 @@ function sendReqToDb(obj) {
             } else {
                 console.log('error detected');
             }
+        },
+        error: function (result) {
+            if (result.success === false) {
+                console.log('error detected', result);
+            }
         }
     });
 };
