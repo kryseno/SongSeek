@@ -10,4 +10,11 @@ function initApp() {
 
 function handleClick() {
     console.log('submit button clicked');
+
 }
+
+// ajax call
+// grab input data
+// send input data to server
+// place input data into db
+// last priority: retrieve history of requests
