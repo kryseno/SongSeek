@@ -29,7 +29,31 @@ function sendSongRequest() {
         usersEmail: this.usersEmail
     };
     console.log('grabbing song request info:',this.songRequestObj);
+    sendReqToDb(this.sendRequestObj);
 }
+
+function sendReqToDb(obj) {
+    const dataObj = {
+        artistName: obj.artistName,
+        songTitle: obj.songTitle,
+        usersName: obj.usersName,
+        usersEmail: obj.usersEmail
+    };
+    $.ajax({
+        dataType: 'json',
+        url: 'http://localhost:4000/add_song_request',
+        method: 'post',
+        data: dataObj,
+        success: function (result) {
+            console.log('this is the result: ', result);
+            if(result.success){
+                console.log('successful result');
+            } else {
+                console.log('error detected');
+            }
+        }
+    });
+};
 
 
 // ajax call
