@@ -56,7 +56,7 @@ app.post('/add_song_request', function(req, res){
 
     //Start Nodemailer: Send email to kryseno
     const mailOptions = {
-        from: 'SongSeek" <kryseno.server@gmail.com>',
+        from: '"SongSeek" <kryseno.server@gmail.com>',
         to: `kryseno@gmail.com`,
         subject: 'SongSeek Song Request!',
         html:   `
