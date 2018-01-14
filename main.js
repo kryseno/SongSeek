@@ -2,6 +2,7 @@ $(document).ready(initApp);
 
 function initApp() {
     console.log('app initiated');
+    addClickHandlersToElements();
     $("#songRequestForm").submit(function(e){
         e.preventDefault();
     })
@@ -17,14 +18,17 @@ function handleSubmitClicked() {
 
 function sendSongRequest() {
     console.log('submit button clicked');
-    const inputArtistName = $("#inputArtistName").val();
-    const inputSongTitle = $("#inputSongTitle").val();
-    const inputUsersName = $("#inputUsersName").val();
-    const inputUsersEmail = $("#inputUsersEmail").val();
-    console.log('artistName: '+inputArtistName);
-    console.log('songTitle: '+inputSongTitle);
-    console.log('usersName: '+inputUsersName);
-    console.log('usersEmail: '+inputUsersEmail);
+    this.artistName = $("#inputArtistName").val();
+    this.songTitle = $("#inputSongTitle").val();
+    this.usersName = $("#inputUsersName").val();
+    this.usersEmail = $("#inputUsersEmail").val();
+    this.songRequestObj = {
+        artistName: this.artistName,
+        songTitle: this.songTitle,
+        usersName: this.usersName,
+        usersEmail: this.usersEmail
+    };
+    console.log('grabbing song request info:',this.songRequestObj);
 }
 
 
