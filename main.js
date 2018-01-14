@@ -41,7 +41,7 @@ function sendReqToDb(obj) {
     };
     $.ajax({
         dataType: 'json',
-        url: 'http://localhost:4000/add_song_request',
+        url: 'http://songseek.kryseno.com/add_song_request',
         method: 'post',
         data: dataObj,
         success: function (result) {
