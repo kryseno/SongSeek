@@ -64,6 +64,10 @@ function changeSubmitStatus() {
     const submitMessage = $("#displayStatus")
         .html('Your request has been submitted!<br>Check your email within 1 business day to receive your song!');
     $(".displaySuccess").append(submitMessage);
+    $("#inputArtistName").val('');
+    $("#inputSongTitle").val('');
+    $("#inputUsersName").val('');
+    $("#inputUsersEmail").val('');
     $("form").toggle();
     $("#newSongButton").removeClass("hide");
 }
@@ -72,6 +76,6 @@ function revealSubmitButton() {
     $("form").toggle();
     $("#newSongButton").addClass("hide");
     const requestSong = $("#displayStatus")
-        .html('Request A Song!');
+    .html('Request A Song!');
 $(".displaySuccess").append(requestSong);
 }
