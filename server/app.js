@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const mysql = require('mysql');
 
 app.get('/', function(req, res){
     res.send('hey girl hey');
