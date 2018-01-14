@@ -20,6 +20,17 @@ app.use(function(req, res, next) {
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
+// BEGIN NODEMAILER
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    host: 'smtp.gmail.com',
+    auth: {
+      user: USERNAME,     
+      pass: PASSWORD  
+    }                             
+  });
+// END NODEMAILER
+
 app.post('/add_song_request', function(req, res){
     res.send('hey girl hey');
     console.log('data is being received');
