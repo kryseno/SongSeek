@@ -62,28 +62,18 @@ function sendReqToDb(obj) {
 
 function changeSubmitStatus() {
     console.log('this is where submit status will change');
-    const submitMessage = $("#statusMessage")
+    const submitMessage = $("#displayStatus")
         .html('Your request has been submitted!<br>Check your email within 1 business day to receive your song!');
-    $(".submitStatus").append(submitMessage);
-    console.log('status message changed, input values cleared');
-    $("#inputArtistName").val('');
-    $("#inputSongTitle").val('');
-    $("#inputUsersName").val('');
-    $("#inputUsersEmail").val('');
+    $(".displaySuccess").append(submitMessage);
 
-    $("#submitButton").hide();
-    const addNewSong = $("<button></button>")
-        .addClass("btn btn-danger")
-        .attr("id", "newSongButton")
-        .on("click", revealSubmitButton)
-        .text('Request Another Song!');
-    $(".toggleButton").append(addNewSong);
+    $("form").toggle();
+    $("#newSongButton").removeClass("hide");
 }
 
 function revealSubmitButton() {
-    $("#newSongButton").hide();
-    $("#submitButton").show();
-    const submitMessage = $("#statusMessage")
-    .html('Press Submit to Send Your Song Request!');
-$(".submitStatus").append(submitMessage);
+    $("form").toggle();
+    $("#newSongButton").addClass("hide");
+    const requestSong = $("#displayStatus")
+    .html('Request A Song!');
+$(".displaySuccess").append(requestSong);
 }

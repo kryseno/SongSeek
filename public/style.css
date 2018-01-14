@@ -32,3 +32,6 @@ h5 {
 .pre-scrollable {
     max-height: 365px;
 }
+.hide {
+    visibility: hidden;
+}
