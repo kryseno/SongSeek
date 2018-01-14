@@ -64,10 +64,10 @@ function changeSubmitStatus() {
     const submitMessage = $("#displayStatus")
         .html('Your request has been submitted!<br>Check your email within 1 business day to receive your song!');
     $(".displaySuccess").append(submitMessage);
-    $("#inputArtistName").val('');
-    $("#inputSongTitle").val('');
-    $("#inputUsersName").val('');
-    $("#inputUsersEmail").val('');
+    // $("#inputArtistName").val('');
+    // $("#inputSongTitle").val('');
+    // $("#inputUsersName").val('');
+    // $("#inputUsersEmail").val('');
     $("form").toggle();
     $("#newSongButton").removeClass("hide");
 }
