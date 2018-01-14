@@ -59,3 +59,14 @@ function sendReqToDb(obj) {
         }
     });
 };
+
+function changeSubmitStatus() {
+    console.log('this is where submit status will change');
+    const submitMessage = $("#statusMessage").html('Your request has been submitted!');
+    $(".submitStatus").append(submitMessage);
+    console.log('status message changed, input values cleared');
+    $("#inputArtistName").val('');
+    $("#inputSongTitle").val('');
+    $("#inputUsersName").val('');
+    $("#inputUsersEmail").val('');
+}
