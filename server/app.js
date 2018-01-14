@@ -4,6 +4,8 @@ const credentials = require('./mysql_credentials');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const path = require('path');
+const nodemailer = require('nodemailer');
+const { USERNAME, PASSWORD } = require('./nodemailer_config.js');
 
 // body-parser
 app.use(bodyParser.urlencoded({ extended: false }));
