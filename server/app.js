@@ -2,6 +2,19 @@ const express = require('express');
 const app = express();
 const credentials = require('./mysql_credentials');
 const mysql = require('mysql');
+const bodyParser = require('body-parser');
+
+// body-parser
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use( bodyParser.json() );
+app.use(cookieParser());
+
+// CORS
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
 
 app.get('/', function(req, res){
     res.send('hey girl hey');
