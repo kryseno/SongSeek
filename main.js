@@ -10,14 +10,14 @@ function initApp() {
 
 function handleClick() {
     console.log('submit button clicked');
-    const artistName = $("#inputArtistName").val();
-    const songTitle = $("#inputSongTitle").val();
-    const usersName = $("#inputYourName").val();
-    const usersEmail = $("#inputEmail").val();
-    console.log('artistName: '+artistName);
-    console.log('songTitle: '+songTitle);
-    console.log('usersName: '+usersName);
-    console.log('usersEmail: '+usersEmail);
+    const inputArtistName = $("#inputArtistName").val();
+    const inputSongTitle = $("#inputSongTitle").val();
+    const inputUsersName = $("#inputUsersName").val();
+    const inputUsersEmail = $("#inputUsersEmail").val();
+    console.log('artistName: '+inputArtistName);
+    console.log('songTitle: '+inputSongTitle);
+    console.log('usersName: '+inputUsersName);
+    console.log('usersEmail: '+inputUsersEmail);
 }
 
 // ajax call
