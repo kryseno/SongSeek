@@ -59,10 +59,3 @@ function sendReqToDb(obj) {
         }
     });
 };
-
-
-// ajax call
-// grab input data
-// send input data to server
-// place input data into db
-// last priority: retrieve history of requests
