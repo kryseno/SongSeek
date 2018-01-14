@@ -16,7 +16,7 @@ app.use(function(req, res, next) {
     next();
 });
 
-app.get('/add_song_request', function(req, res){
+app.post('/add_song_request', function(req, res){
     res.send('hey girl hey');
     console.log('data is being received');
 
