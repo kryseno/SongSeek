@@ -27,6 +27,6 @@ app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
 
-app.listen(4000, function(){
-    console.log('server has started on port 4000');
+app.listen(5110, function(){
+    console.log('server has started on port 5110');
 })
